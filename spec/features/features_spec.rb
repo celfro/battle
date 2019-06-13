@@ -1,6 +1,11 @@
-feature 'Battle' do
-  scenario 'checks the homepage says Testing infrastructure working' do
+
+feature 'Entering Player Names' do
+  scenario 'player can enter their names and they appear on the screen' do
     visit '/'
-    expect(page).to have_content('Testing infrastructure working!')
+    fill_in('Player 1', with: 'Alexis')
+    fill_in('Player 2', with: 'Celia')
+    click_button('Submit')
+    expect(page).to have_content('Alexis')
+    expect(page).to have_content('Celia')
   end
 end
