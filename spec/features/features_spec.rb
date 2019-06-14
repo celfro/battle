@@ -18,3 +18,13 @@
 #    expect(page).to have_content("Celia Hit Points: 50")
 #  end
 #end
+
+#feature 'Attack player 2 and get confirmation' do
+#  scenario 'Attack player 2' do
+#  visit '/'
+#  fill_in('Player 1', with: 'Alexis')
+#  fill_in('Player 2', with: 'Celia')
+#  click_button('Submit')
+#  expect(page).to have_content("Celia has been attacked")
+#end
+#end
